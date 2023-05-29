@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Montserrat:ital,wght@0,300;0,400;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-100:#00A8E8;
+    --primary-200:#008cc9;
+    --primary-300:#004d85;
+    --accent-100:#FDB813;
+    --accent-200:#8f5c00;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --bg-100:#FFFFFF;
+    --bg-200:#f5f5f5;
+    --bg-300:#cccccc;
+}
+
+body {
+    background-color: var(--bg-100);
+    font-family: 'Inter', sans-serif;
+    width: 72vw;
+    margin: 0 auto;
+}
+
+.pictures {
+    display: grid;
+    gap: 48px;
+    grid-template-columns: 480px;
+  }
+  
+.pictures img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.pictures .title{
+    font-weight: bold;
+}
+  

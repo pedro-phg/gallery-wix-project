@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Galeria de Fotos Interantar</title>
+</head>
+<body>
+    <header>
+        <a href="/forms/">Submeta sua foto</a>
+    </header>
+    <h1>Galeria de Fotos</h1>
+    <div class="pictures">
+        
+        {% for picture in pictures.data %}
+            <div class="picture">
+                <p class="title">{{picture.title}}</p>
+                <img src="{{picture.url}}" alt="{{picutre.title}}" class="picture">
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ipsam molestias nesciunt velit laudantium accusantium repudiandae exercitationem libero numquam veniam modi repellat cum maxime recusandae, quidem perferendis, nihil expedita fugiat.</p>
+            </div>
+        {% endfor %}
+        
+    </div>
+</body>
+</html>
